@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>NepalGov360</title>
+    </head>
+    <body>
+        <%- include('header') %>
+
+        <h1>Government Data</h1>
+        <ul id="data-list">
+            <% data.forEach(item => { %>
+            <div>
+                <h1><%= item.title %></h1>
+                <p><%= item.number %></p>
+            </div>
+
+            <% }) %>
+        </ul>
+
+        <%- include('footer') %>
+    </body>
+</html>
